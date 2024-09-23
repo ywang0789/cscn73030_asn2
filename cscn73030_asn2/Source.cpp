@@ -40,12 +40,13 @@ int main()
 		cout << "ERROR: cannot open file" << endl;
 	}
 
+#ifdef _DEBUG
 	// Display student data
 	for (int i = 0; i < studentData.size(); i++)
 	{
 		cout << studentData[i].firstName << " " << studentData[i].lastName << endl;
 	}
-
+#endif
 
 	return 1;
 }
