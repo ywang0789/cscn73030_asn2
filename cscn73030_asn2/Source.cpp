@@ -13,6 +13,19 @@ struct STUDENT_DATA
 
 int main()
 {
+
+	// print state 
+#ifdef _DEBUG
+	cout << "DEBUG MODE" << endl;
+#endif
+#ifdef _PRE_RELEASE
+	cout << "PRE-RELEASE MODE" << endl;
+#endif
+#ifdef _RELEASE
+	cout << "RELEASE MODE" << endl;
+#endif
+	cout << "===================================" << endl;
+
 	// Read student data file and store it in a vector
 	vector <STUDENT_DATA> studentData;
 
