@@ -26,8 +26,8 @@ int main()
 			// parse line string and store it in STUDENT_DATA
 			STUDENT_DATA student;
 			int pos = line.find(",");
-			student.firstName = line.substr(0, pos);
-			student.lastName = line.substr(pos + 2); // +2 to skip the space after the coma
+			student.lastName = line.substr(0, pos);
+			student.firstName = line.substr(pos + 2); // +2 to skip the space after the coma
 
 			// push back parsed STUDENT_DATA to vector
 			studentData.push_back(student);
