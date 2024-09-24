@@ -25,10 +25,11 @@ int main()
 	cout << "RELEASE MODE" << endl;
 #endif
 	cout << "===================================" << endl;
-
-	// Read student data file and store it in a vector
+	
 	vector <STUDENT_DATA> studentData;
 
+#ifdef _RELEASE
+	// Read student data file and store it in a vector
 	ifstream file("StudentData.txt");
 	if (file.is_open())
 	{
@@ -52,6 +53,8 @@ int main()
 	{
 		cout << "ERROR: cannot open file" << endl;
 	}
+
+#endif
 
 #ifdef _DEBUG
 	// Display student data
