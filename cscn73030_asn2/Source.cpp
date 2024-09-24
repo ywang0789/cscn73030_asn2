@@ -26,7 +26,7 @@ int main()
 	cout << "PRE-RELEASE MODE" << endl;
 #endif
 
-#ifdef _RELEASE
+#ifdef NDEBUG // RELEASE MODE
 	cout << "RELEASE MODE" << endl;
 #endif
 	cout << "===================================" << endl;
